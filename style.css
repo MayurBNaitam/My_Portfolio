@@ -1,15 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Balsamiq Sans", cursive;
 }
 body {
-    background: url(/Images/bg.jpg) no-repeat center fixed;
-    background-size: auto;
+  background: url(/Images/bg.jpg) no-repeat center fixed;
+  background-size: auto;
 }
 /* Loading Animation */
 #loader {
-  background: black url(/Loading-Animation/circle-loader.gif) no-repeat center center;
+  background: black url(/Loading-Animation/circle-loader.gif) no-repeat center
+    center;
   background-size: 5%;
   height: 100vh;
   width: 100%;
@@ -18,26 +21,34 @@ body {
 }
 
 /* Navbar  */
-nav ul{
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    color: white;
-    list-style: none;
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  transition: all 0.2s ease-out;
 }
-nav ul li{
-    margin: 0 10px;
-    padding: 0 5px;
-    font-size: 105%;
-    cursor: pointer;;
-    border-bottom: 3px solid transparent;
+nav ul {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  list-style: none;
 }
-nav ul li:hover{
-    border-bottom: 3px solid white;
-    transition: all 0.2s ease-out;
-    /* font-weight: bold; */
+nav ul li {
+  margin: 0 10px;
+  padding: 0 5px;
+  font-size: 115%;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-out;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  border-bottom: 3px solid white;
+  letter-spacing: 1px;
+  color: black;
+  /* font-weight: bold; */
 }
 /* Main Content  */
 section {
@@ -54,8 +65,8 @@ section div {
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  width: 70%;
-  height: 70%;
+  width: 77%;
+  height: 80%;
   color: white;
   /* border: 2px solid white; */
   border-radius: 15px;
@@ -64,16 +75,19 @@ section div {
   /* backdrop-filter: saturate(180%) blur(10px); */
   box-shadow: 0 0 60px rgb(33, 31, 31);
 }
-section div span{
+section div span {
   margin: 5px 0;
-  margin-left: 30px;
+  margin-left: 80px;
 }
-section div span:nth-child(1){
+section div span:nth-child(1) {
+  font-size: 35px;
+}
+section div span:nth-child(2) {
+  font-size: 45px;
+}
+section div span:nth-child(3) {
   font-size: 30px;
 }
-section div span:nth-child(2){
-  font-size: 25px;
-}
-section div span:nth-child(3){
-  font-size: 15px;
+section div span:nth-child(4) {
+  font-size: 20px;
 }
