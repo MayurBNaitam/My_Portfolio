@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
     <title>Mayur Naitam</title>
   </head>
   <body>
     <div id="loader"></div>
-    <nav>
+    <!-- <video autoplay muted loop id="myVideo">
+      <source src="Images/pexels-oleg-gamulinskii-3163534-3840x2160-30fps.mp4" type="video/mp4">
+      Your browser does not support HTML5 video. -->
+    </video>
+    <nav data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1900">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="/about.html">About</a></li>
@@ -18,13 +23,44 @@
       </ul>
     </nav>
     <section>
-      <div class="main">
-        <span>Hello I'm</span>
-        <span>Mayur Naitam</span>
-        <span>I'm a Web Developer</span>
-        <span>Seeking a rewarding career as a web developer.</span>
+      <div class="main" data-aos="fade-up">
+        <div class="content">
+          <div class="flexcontent">
+            <div class="mydescription" data-aos="fade-right" data-aos-delay="2300">
+              <span>Hello I'm</span>
+              <span>Mayur Naitam</span>
+              <span>I'm a Web Developer</span>
+              <span>Seeking a rewarding career as a web developer.</span>
+            </div>
+            <div class="socialmedia" data-aos="fade-up" data-aos-delay="3000" data-aos-offset="50">
+              <a
+                href="https://www.linkedin.com/in/mayur-naitam-5511351b7/"
+                target="_blank"
+                ><img src="/Images/linkedin.png" alt="LinkedIn"
+              /></a>
+              <a href="https://wa.me/8806994309" target="_blank"
+                ><img src="/Images/whatsapp.png" alt="Whatsapp"
+              /></a>
+              <a href="https://www.instagram.com/naitammayur/" target="_blank"
+                ><img src="/Images/instagram.png" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+      </div>
+        <div class="image" data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="1100">
+          <img src="/Images/Programming-amico.png" alt="" />
+        </div>
+      </div>
       </div>
     </section>
     <script src="index.js"></script>
+    <!-- Aos Script  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250,
+        duration: 1300
+      });
+    </script>
   </body>
 </html>
